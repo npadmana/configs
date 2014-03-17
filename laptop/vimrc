@@ -1,0 +1,44 @@
+" Basic configuration
+set ruler number
+set nocp
+set tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
+set smarttab autoindent
+set incsearch
+set smartcase
+set hidden
+
+
+
+" Vundle
+filetype off " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Bundles below
+Bundle 'gmarik/vundle'
+
+Bundle 'kien/ctrlp.vim'
+Bundle 'altercation/vim-colors-solarized'
+
+filetype plugin indent on     " required
+
+"******
+" Ctrlp setting
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+"****
+" Colorscheme settings
+syntax enable " Syntax highlighting
+set background=dark
+colorscheme solarized
+
+"****
+" Mappings for [[, ]] from vim help
+map [[ ?{<CR>w99[{
+map ][ /}<CR>b99]}
+map ]] j0[[%/{<CR>
+map [] k$][%?}<CR>
+
