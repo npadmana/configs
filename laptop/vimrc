@@ -8,6 +8,9 @@ set smartcase
 set hidden
 
 
+" No bells, flashing windows
+set noeb vb t_vb=
+
 
 " Vundle
 filetype off " required
@@ -20,9 +23,14 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'kien/ctrlp.vim'
-Bundle 'altercation/vim-colors-solarized'
+"Bundle 'altercation/vim-colors-solarized'
+"Bundle 'rickharris/vim-blackboard'
+Bundle 'bling/vim-airline'
+"Bundle 'ratazzi/blackboard.vim'
 
 filetype plugin indent on     " required
+
+
 
 "******
 " Ctrlp setting
@@ -32,8 +40,13 @@ let g:ctrlp_cmd = 'CtrlP'
 "****
 " Colorscheme settings
 syntax enable " Syntax highlighting
+colorscheme darkblue
 set background=dark
-colorscheme solarized
+
+"*******
+" vim-airline
+set laststatus=2  " Keep status line on all the time
+let g:airline_theme='tomorrow'
 
 "****
 " Mappings for [[, ]] from vim help
