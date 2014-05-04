@@ -23,14 +23,17 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'kien/ctrlp.vim'
-"Bundle 'altercation/vim-colors-solarized'
-"Bundle 'rickharris/vim-blackboard'
 Bundle 'bling/vim-airline'
-"Bundle 'ratazzi/blackboard.vim'
+Bundle 'tpope/vim-pathogen'
+Bundle 'tpope/vim-dispatch'
+Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'derekwyatt/vim-scala'
 
 filetype plugin indent on     " required
 
-
+"*******
+" Pathogen
+execute pathogen#infect('~/configs/vim-bundles/{}')
 
 "******
 " Ctrlp setting
