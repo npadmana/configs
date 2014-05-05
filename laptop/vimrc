@@ -28,6 +28,7 @@ Bundle 'tpope/vim-pathogen'
 Bundle 'tpope/vim-dispatch'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'rsmenon/vim-mathematica'
 
 filetype plugin indent on     " required
 
